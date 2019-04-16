@@ -1,6 +1,4 @@
-require_relative '..config/environment'
-require 'tty-prompt'
-
+ 
 class CommandLineInterface
 
     def greet
@@ -8,7 +6,7 @@ class CommandLineInterface
     end
 
     def user_type
-    $prompt.select("Choose your user type?", ["Customer", "Restaurant"])
+    $prompt.select("Choose your account type?", ["Customer", "Restaurant"])
     end
 
 

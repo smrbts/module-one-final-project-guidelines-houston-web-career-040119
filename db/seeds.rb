@@ -1,0 +1,68 @@
+# require_relative "../lib/Models/users.rb"
+# require_relative "../lib/Models/restaurants.rb"
+# require_relative "../lib/Models/subscriptions.rb"
+User.destroy_all
+Restaurant.destroy_all
+Subscription.destroy_all
+
+u1 = User.create({username: "Charles", password: "Charles1"})
+u2 = User.create({username: "Chris", password: "Chris1"})
+u3 = User.create({username: "Justin", password: "Justin1"})
+u4 = User.create({username: "Luis", password: "Luis1"})
+u5 = User.create({username: "Minh", password: "Minh1"})
+u6 = User.create({username: "Nathan", password: "Nathan1"})
+u7 = User.create({username: "Pratikshya", password: "Pratikshya1"})
+u8 = User.create({username: "Robert", password: "Robert1"})
+u9 = User.create({username: "Ryan", password: "Ryan1"})
+u10 = User.create({username: "Sam", password: "Sam1"})
+u11 = User.create({username: "Shawn", password: "Shawn1"})
+u12 = User.create({username: "Kevin", password: "Kevin1"})
+u13 = User.create({username: "Nicholas", password: "Nicholas1"})
+u14 = User.create({username: "Thomas", password: "Thomas1"})
+u15 = User.create({username: "Scott", password: "Scott1"})
+u16 = User.create({username: "Vidhi", password: "Vidhi1"})
+
+
+r1 = Restaurant.create({name: "Moku Bar"})
+r2 = Restaurant.create({name: "Antone's Famous Po'Boys"})
+r3 = Restaurant.create({name: "Arte Pizzeria"})
+r4 = Restaurant.create({name: "Ballpark Cafe"})
+r5 = Restaurant.create({name: "Chipotle"})
+r6 = Restaurant.create({name: "Jason's Deli"})
+r7 = Restaurant.create({name: "McDonald's"})
+r8 = Restaurant.create({name: "Schlotsky's"})
+r9 = Restaurant.create({name: "The Pho Spot"})
+r10 = Restaurant.create({name: "Your Pie"})
+
+s1 = Subscription.create({user_id:1, restaurant_id: 1})
+s2 = Subscription.create({user_id: 1,restaurant_id: 9})
+s3 = Subscription.create({user_id: 2,restaurant_id: 2})
+s4 = Subscription.create({user_id: 2,restaurant_id: 6})
+s5 = Subscription.create({user_id: 2,restaurant_id: 7})
+s6 = Subscription.create({user_id: 3,restaurant_id: 5})
+s7 = Subscription.create({user_id: 3,restaurant_id: 10})
+s8 = Subscription.create({user_id: 4,restaurant_id: 2})
+s9 = Subscription.create({user_id: 4,restaurant_id: 3})
+s10 = Subscription.create({user_id: 5,restaurant_id: 10})
+s11 = Subscription.create({user_id: 5,restaurant_id: 6})
+s12 = Subscription.create({user_id: 6,restaurant_id: 3})
+s13 = Subscription.create({user_id: 7,restaurant_id: 8})
+s14 = Subscription.create({user_id: 7,restaurant_id: 2})
+s15 = Subscription.create({user_id: 8,restaurant_id: 1})
+s16 = Subscription.create({user_id: 8,restaurant_id: 10})
+s17 = Subscription.create({user_id: 9,restaurant_id: 4})
+s18 = Subscription.create({user_id: 10,restaurant_id: 5})
+s19 = Subscription.create({user_id: 10,restaurant_id: 9})
+s20 = Subscription.create({user_id: 11,restaurant_id: 1})
+s21 = Subscription.create({user_id: 11,restaurant_id: 6})
+s22 = Subscription.create({user_id: 12,restaurant_id: 7})
+s23 = Subscription.create({user_id: 13,restaurant_id: 1})
+s24 = Subscription.create({user_id: 13,restaurant_id: 10})
+s25 = Subscription.create({user_id: 14,restaurant_id: 2})
+s26 = Subscription.create({user_id: 15,restaurant_id: 3})
+s27 = Subscription.create({user_id: 16,restaurant_id: 4})
+s28 = Subscription.create({user_id: 16,restaurant_id: 5})
+s29 = Subscription.create({user_id: 16,restaurant_id: 7})
+s30 = Subscription.create({user_id: 16,restaurant_id: 8})
+
+

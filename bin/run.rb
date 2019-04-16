@@ -1,6 +1,6 @@
 # require 'pry'
 require_relative '../config/environment'
-$prompt = TTY::prompt.new
+$prompt = TTY::Prompt.new
 
 # binding.pry
 new_cli = CommandLineInterface.new
