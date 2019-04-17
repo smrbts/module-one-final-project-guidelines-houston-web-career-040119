@@ -13,6 +13,11 @@ puts user
 if user == "Restaurant"
    enter_username
 end
+if user == "Restaurant"
+    enter_pwd
+end
+
+main_menu
 
 
 #puts "HELLO WORLD"
