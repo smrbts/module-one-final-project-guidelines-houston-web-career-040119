@@ -25,6 +25,12 @@ class CommandLineInterface
     #     choices = %w(customer subscriptions)
     #     $prompt.multi_select("Here are all the restaurants you are subscribed to. Select any you would like to delete", choices)
     # end
+    
+
+  
+
+
+
 
 
 
