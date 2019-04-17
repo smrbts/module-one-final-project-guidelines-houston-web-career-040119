@@ -9,6 +9,10 @@ class CommandLineInterface
     $prompt.select("Choose your account type?", ["Customer", "Restaurant"])
     end
 
+    
+
+  
+
 
 
 

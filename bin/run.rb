@@ -8,16 +8,37 @@ new_cli.greet
 
 user = new_cli.user_type
 
-puts user
+
 
 if user == "Restaurant"
-   enter_username
+   restaurant_username
 end
+
 if user == "Restaurant"
-    enter_pwd
+    restaurant_pwd
 end
 
-main_menu
+if user == "Restaurant"
+    welcome_restaurant
+    ri = restaurant_menu
+end
+
+if ri == "Account"
+    ra = restaurant_account
+    puts ra
+end
+
+if ri == "Sign Out"
+    restaurant_sign_out
+end
+
+if ri == "Subscriptions"
+    rn = restaurant_news
+    puts rn
+end
 
 
-#puts "HELLO WORLD"
+
+
+
+puts "HELLO WORLD"
