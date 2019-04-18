@@ -1,13 +1,14 @@
 def welcome(prompt)
-    select_register, select_login, select_exit = -1,-2,-3
+    select_register, select_login, select_exit, select_mystery = -1,-2,-3,-4
 
     while true
         puts "\e[H\e[2J" #clears previous menu
         puts "Welcome to NewsFeedMe, where foodies and restaurants can connect about news/events going on at their favorite spot!"
-        selection = prompt.select("If you already have an account, please login. If not feel free to register!", ["Register", "Login","Exit"]) do |menu|
+        selection = prompt.select("If you already have an account, please login. If not feel free to register!", ["Register", "Login","Exit","Mystery"]) do |menu|
             menu.choice "Register", select_register
             menu.choice "Login", select_login
             menu.choice "Exit", select_exit
+            menu.choice "Mystery", select_mystery
         end
 
         case selection
@@ -17,6 +18,8 @@ def welcome(prompt)
             user_type(prompt)
         when select_exit
             exit_screen
+        when select_mystery
+            do_not_enter(prompt)
         end
     end
 end

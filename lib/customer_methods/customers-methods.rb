@@ -1,39 +1,39 @@
-def customer_username
-    cn = $prompt.ask('What is your Username name?')
-    y = User.all.map do |user|
-        user.username
-    end
-    z = y.include?(cn)
-    if z == false
-        customer_username
-    else
-        puts cn
-    end
-end
+# def customer_username
+#     cn = $prompt.ask('What is your Username name?')
+#     y = User.all.map do |user|
+#         user.username
+#     end
+#     z = y.include?(cn)
+#     if z == false
+#         customer_username
+#     else
+#         puts cn
+#     end
+# end
 
-def customer_password
-    burger = $prompt.decorate(' 🍔')
-    cp = $prompt.mask("What is your password?", mask: burger)
-    y = User.all.map do |user|
-        user.password
-    end
-    z = y.include?(cp)
-    if z == false
-        customer_password
-    end
-end
+# def customer_password
+#     burger = $prompt.decorate(' 🍔')
+#     cp = $prompt.mask("What is your password?", mask: burger)
+#     y = User.all.map do |user|
+#         user.password
+#     end
+#     z = y.include?(cp)
+#     if z == false
+#         customer_password
+#     end
+# end
 
-def welcome_customer
-    puts "You have signed in!"
-end
+# def welcome_customer
+#     puts "You have signed in!"
+# end
 
-def customer_interface
-    $prompt.select("What would you like to do?", ["Find New Restaurants", "Manage Subscriptions", "Check Deals", "Change Password", "Sign Out"])
-end
+# def customer_interface
+#     $prompt.select("What would you like to do?", ["Find New Restaurants", "Manage Subscriptions", "Check Deals", "Change Password", "Sign Out"])
+# end
 
-def customer_deals
-    puts "Lets check out your deals!"
-end
+# def customer_deals
+#     puts "Lets check out your deals!"
+# end
 
 def customer_find_new_r
     $prompt.select("Would you like to apply a filter?",["Filter","Live Dangerously"])
@@ -102,9 +102,9 @@ end
 # end
 
 
-def welcome
-    $prompt.select("If you already have an account, please login. If not feel free to register!", ["Register", "Login"])
-end
+# def welcome
+#     $prompt.select("If you already have an account, please login. If not feel free to register!", ["Register", "Login"])
+# end
 
 def user_type
     $prompt.select("Choose your account type?", ["Customer", "Restaurant"])
