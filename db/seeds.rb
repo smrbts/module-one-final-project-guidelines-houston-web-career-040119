@@ -4,6 +4,7 @@
 User.destroy_all
 Restaurant.destroy_all
 Subscription.destroy_all
+Deal.destroy_all
 
 u1 = User.create({username: "Charles", password: "Charles1"})
 u2 = User.create({username: "Chris", password: "Chris1"})
@@ -23,16 +24,16 @@ u15 = User.create({username: "Scott", password: "Scott1"})
 u16 = User.create({username: "Vidhi", password: "Vidhi1"})
 
 
-r1 = Restaurant.create({name: "Moku Bar"})
-r2 = Restaurant.create({name: "Antone's Famous Po'Boys"})
-r3 = Restaurant.create({name: "Arte Pizzeria"})
-r4 = Restaurant.create({name: "Ballpark Cafe"})
-r5 = Restaurant.create({name: "Chipotle"})
-r6 = Restaurant.create({name: "Jason's Deli"})
-r7 = Restaurant.create({name: "McDonald's"})
-r8 = Restaurant.create({name: "Schlotsky's"})
-r9 = Restaurant.create({name: "The Pho Spot"})
-r10 = Restaurant.create({name: "Your Pie"})
+r1 = Restaurant.create({name: "Moku Bar", password: "Moku1"})
+r2 = Restaurant.create({name: "Antone's Famous Po'Boys", password: "Antones1"})
+r3 = Restaurant.create({name: "Arte Pizzeria", password: "Arte1"})
+r4 = Restaurant.create({name: "Ballpark Cafe", password: "Ballpark1"})
+r5 = Restaurant.create({name: "Chipotle", password: "chip1"})
+r6 = Restaurant.create({name: "Jason's Deli", password: "Jason1"})
+r7 = Restaurant.create({name: "McDonald's", password: "McDonalds1"})
+r8 = Restaurant.create({name: "Schlotsky's", password: "Schlotsky1"})
+r9 = Restaurant.create({name: "The Pho Spot", password: "Pho1"})
+r10 = Restaurant.create({name: "Your Pie", password: "Yourpie1"})
 
 s1 = Subscription.create({user_id:1, restaurant_id: 1})
 s2 = Subscription.create({user_id: 1,restaurant_id: 9})
@@ -64,5 +65,25 @@ s27 = Subscription.create({user_id: 16,restaurant_id: 4})
 s28 = Subscription.create({user_id: 16,restaurant_id: 5})
 s29 = Subscription.create({user_id: 16,restaurant_id: 7})
 s30 = Subscription.create({user_id: 16,restaurant_id: 8})
+
+d1 = Deal.create({restaurant_id:5, description:"All April long - 5:00pm CST Guac Happy Hour! Free guac for one hour. YOU DONE HEARD RIGHT"})
+d2 = Deal.create({restaurant_id:1, description:"Free beer Friday, yes we have acually lost our minds."})
+d3 = Deal.create({restaurant_id:4, description:"All summer long, half off burgers while the Astros play!"})
+d4 = Deal.create({restaurant_id:8, description:"Schlotzsky's Slots and Skis -> gambling + skiing, what could go wrong!?"})
+d5 = Deal.create({restaurant_id:3, description:"Slice and a beer for $5 on Saturdays!!"})
+d6 = Deal.create({restaurant_id:2, description:"Friday afternoon gumbo special, only $5!!"})
+d7 = Deal.create({restaurant_id:6, description:"Super Salad - what's a super salad? Entree salads half off until July 1st!"})
+d8 = Deal.create({restaurant_id:9, description:"Seniors and children eat for free 5-8pm on Sundays!"})
+d9 = Deal.create({restaurant_id:10, description:"Pie in mah belly!! Buy two slices for the price of one on Thursday evenings!"})
+d10 = Deal.create({restaurant_id:7, description:"Heart attack special! Quadruple stacked big mac daddy burger time for only $2!!! All day!!"})
+
+
+
+
+
+
+
+
+
 
 
