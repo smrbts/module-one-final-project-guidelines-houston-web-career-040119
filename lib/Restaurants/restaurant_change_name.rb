@@ -6,7 +6,7 @@
 # end
 
 def restaurant_change_name(prompt, store_self)
-
+    
     while true
         puts "\e[H\e[2J" #clears previous menu
         selection = prompt.ask("Change your name to what?")

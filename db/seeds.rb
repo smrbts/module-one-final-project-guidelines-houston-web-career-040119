@@ -4,7 +4,7 @@
 User.destroy_all
 Restaurant.destroy_all
 Subscription.destroy_all
-Deals.destroy_all
+Deal.destroy_all
 
 u1 = User.create({username: "Charles", password: "Charles1"})
 u2 = User.create({username: "Chris", password: "Chris1"})
@@ -66,7 +66,7 @@ s28 = Subscription.create({user_id: 16,restaurant_id: 5})
 s29 = Subscription.create({user_id: 16,restaurant_id: 7})
 s30 = Subscription.create({user_id: 16,restaurant_id: 8})
 
-d1 = Deal.create({restaurant_id:5, description:"All April long - 5:00pm (CST) Guac Happy Hour! Free guac for one hour. YOU DONE HEARD RIGHT"})
+d1 = Deal.create({restaurant_id:5, description:"All April long - 5:00pm CST Guac Happy Hour! Free guac for one hour. YOU DONE HEARD RIGHT"})
 d2 = Deal.create({restaurant_id:1, description:"Free beer Friday, yes we have acually lost our minds."})
 d3 = Deal.create({restaurant_id:4, description:"All summer long, half off burgers while the Astros play!"})
 d4 = Deal.create({restaurant_id:8, description:"Schlotzsky's Slots and Skis -> gambling + skiing, what could go wrong!?"})

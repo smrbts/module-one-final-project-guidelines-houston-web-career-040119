@@ -4,5 +4,6 @@ class CreateDeals < ActiveRecord::Migration[5.2]
       t.integer :restaurant_id
       t.text :description
       t.timestamps
+    end
   end
 end

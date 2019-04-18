@@ -1,20 +1,22 @@
 def restaurant_deals(prompt, store_self)
-    select_name, select_return = -1,-2
+    select_deal, select_add_deal, select_return = -1,-2,-3
 
     while true
         puts "\e[H\e[2J" #clears previous menu
         puts "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
-        selection = prompt.select("Let's see what deals your subscribers are feasting on!", ["All April long - 5:00pm (CST) Guac Happy Hour! Free guac for one hour. YOU DONE HEARD RIGHT", "Return"]) do |menu|
-            menu.choice "All April long - 5:00pm (CST) Guac Happy Hour! Free guac for one hour. YOU DONE HEARD RIGHT", select_name
+        puts "Let's see what deals your subscribers are feasting on!"
+        selection = prompt.select("Deals", "Add Deals", "Return") do |menu|
+            menu.choice "Deals", select_deal
+            menu.choice "Add Deals", select_add_deal
             menu.choice "Return", select_return
         end
 
 
         case selection
-        when select_name 
-            puts "Excellent choice, why you so savy??" 
-            sleep(2)
-            break
+        when select_deal
+            restaurant_current_offerings(prompt, store_self)
+        when select_add_deal
+            restaurant_add_deals(prompt, store_self)
         when select_return
             break
         end
