@@ -78,3 +78,34 @@ def customer_all_restaurants
         restaurant.name
     end
 end
+
+
+# def welcome
+#     puts "Welcome to NewsFeedMe, where foodies and restaurants can connect about news/events going on at their favorite spot!"
+#     $prompt.select ("If you already have an account please login, if not feel free to register!") do |menu|
+#         menu.choice "Register", 1
+#         menu.choice "Login", 2
+#     end
+# end
+
+# def register_login
+#     case welcome
+#         when 1
+#             puts "Great lets make an account!"
+#             register_account
+#             # menu2 = "true"
+#         when 2
+#             puts "Welcome back, lets get you signed in!"
+#             user_login
+#             # menu3 = "true"
+#     end
+# end
+
+
+def welcome
+    $prompt.select("If you already have an account, please login. If not feel free to register!", ["Register", "Login"])
+end
+
+def user_type
+    $prompt.select("Choose your account type?", ["Customer", "Restaurant"])
+    end
