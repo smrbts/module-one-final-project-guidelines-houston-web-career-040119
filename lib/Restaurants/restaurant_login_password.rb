@@ -1,8 +1,8 @@
 def restaurant_login_password(prompt, store)
     while true
         puts "\e[H\e[2J"
-        burger = prompt.decorate(' :hamburger:')
-        rp = prompt.mask("What is your password?", make: burger)
+        burger = prompt.decorate('🍔')
+        rp = prompt.mask("What is your password?", mask: burger)
         # y = Restaurant.all.map do |restaurant|
         #     restaurant.password
         # end

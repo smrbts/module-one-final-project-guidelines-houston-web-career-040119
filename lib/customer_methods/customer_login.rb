@@ -11,6 +11,5 @@ def customer_login_name(prompt)
         else
             customer_login_password(prompt)
         end
-
 end
     

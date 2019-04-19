@@ -8,3 +8,5 @@ gem "require_all"
 gem 'tty'
 gem 'json'
 gem 'rspec'
+gem 'tty-font'
+gem 'pastel'

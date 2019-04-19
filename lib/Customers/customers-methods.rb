@@ -106,6 +106,6 @@
 #     $prompt.select("If you already have an account, please login. If not feel free to register!", ["Register", "Login"])
 # end
 
-# def user_type
+# def 
 #     $prompt.select("Choose your account type?", ["Customer", "Restaurant"])
 #     end

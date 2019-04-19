@@ -5,7 +5,7 @@ def restaurant_current_offerings(prompt, store_self)
         if selection != nil
             desc = selection.map{|deal| deal.description}
             puts desc
-            sleep(2)
+            prompt.keypress("Press any key to go back.")
             break
         else
             restaurant_deals(prompt, store_self)

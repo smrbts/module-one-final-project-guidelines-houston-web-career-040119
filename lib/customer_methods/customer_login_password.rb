@@ -1,7 +1,7 @@
 def customer_login_password(prompt,customer)
     while true
         puts "\e[H\e[2J"
-        burger = prompt.decorate(' 🍔')
+        burger = prompt.decorate('🍔')
         cp = prompt.mask("What is your password?", mask: burger)
         # customer.password = cp
         # y = User.all.map do |user|
@@ -9,8 +9,6 @@ def customer_login_password(prompt,customer)
         # end
         # z = y.include?(cp)
         usr = User.find_by(username: customer)
-            
-
         if usr.password != cp
             puts "Doesn't look like thats the right password, lets try that again"
             sleep(2)
